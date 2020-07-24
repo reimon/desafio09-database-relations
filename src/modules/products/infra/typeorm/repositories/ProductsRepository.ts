@@ -38,15 +38,15 @@ class ProductsRepository implements IProductsRepository {
     return productName;
   }
 
-  // public async findAllById(products: IFindProducts[]): Promise<Product[]> {
-  //   // TODO
-  // }
+  public async findAllById(products: IFindProducts[]): Promise<Product[]> {
+    // TODO
+  }
 
-  // public async updateQuantity(
-  //   products: IUpdateProductsQuantityDTO[],
-  // ): Promise<Product[]> {
-  //   // TODO
-  // }
+  public async updateQuantity(
+    products: IUpdateProductsQuantityDTO[],
+  ): Promise<Product[]> {
+    // TODO
+  }
 }
 
 export default ProductsRepository;
