@@ -43,6 +43,24 @@ export default class CreateOrdersProducts1595586442802
             default: 'now()',
           },
         ],
+        foreignKeys: [
+          {
+            name: 'ForeignOrder',
+            columnNames: ['order_id'],
+            referencedTableName: 'orders',
+            referencedColumnNames: ['id'],
+            onDelete: 'CASCADE',
+            onUpdate: 'CASCADE',
+          },
+          {
+            name: 'ForeignProduct',
+            columnNames: ['product_id'],
+            referencedTableName: 'products',
+            referencedColumnNames: ['id'],
+            onDelete: 'CASCADE',
+            onUpdate: 'CASCADE',
+          },
+        ],
       }),
     );
   }
