@@ -41,7 +41,6 @@ describe('App', () => {
       name: 'Rocketseat',
       email: 'oi@rocketseat.com.br',
     });
-
     expect(response.body).toEqual(
       expect.objectContaining({
         name: 'Rocketseat',
